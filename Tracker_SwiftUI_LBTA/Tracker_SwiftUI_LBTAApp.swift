@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Tracker_SwiftUI_LBTAApp: App {
+    @StateObject var transactionsListVM = TransactionListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(transactionsListVM)
         }
     }
 }

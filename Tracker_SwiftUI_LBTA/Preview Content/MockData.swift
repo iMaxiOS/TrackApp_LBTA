@@ -16,7 +16,7 @@ var transactionMockData = Transaction(
     merchant: "Apple",
     amount: 11.33,
     type: "debit",
-    categoryID: 801,
+    categoryId: 801,
     category: "Software",
     isPending: false,
     isTransfer: false,
@@ -25,3 +25,9 @@ var transactionMockData = Transaction(
 )
 
 var transactionListMockData = [Transaction](repeating: transactionMockData, count: 10)
+
+let transactionListVM: TransactionListViewModel = {
+    let transactions = TransactionListViewModel()
+    transactions.transactions = transactionListMockData
+    return transactions
+}()

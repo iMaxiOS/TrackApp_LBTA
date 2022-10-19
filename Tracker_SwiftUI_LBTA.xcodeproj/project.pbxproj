@@ -19,6 +19,7 @@
 		ACF93BEB290020EB006879F6 /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF93BEA290020EB006879F6 /* Ext+String.swift */; };
 		ACF93BEE2900275C006879F6 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = ACF93BED2900275C006879F6 /* SwiftUIFontIcon */; };
 		ACF93BF029002909006879F6 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF93BEF29002909006879F6 /* TransactionListViewModel.swift */; };
+		ACF93BF229003325006879F6 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF93BF129003325006879F6 /* RecentTransactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		ACF93BE829002057006879F6 /* Ext+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Date.swift"; sourceTree = "<group>"; };
 		ACF93BEA290020EB006879F6 /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
 		ACF93BEF29002909006879F6 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		ACF93BF129003325006879F6 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				ACF93BE529001CAD006879F6 /* Cell */,
 				AC9B1FC829000DF500A1A4A2 /* ContentView.swift */,
+				ACF93BF129003325006879F6 /* RecentTransactionList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				ACF93BDE290015E1006879F6 /* Exte+Color.swift in Sources */,
 				ACF93BEB290020EB006879F6 /* Ext+String.swift in Sources */,
 				ACF93BE329001B92006879F6 /* MockData.swift in Sources */,
+				ACF93BF229003325006879F6 /* RecentTransactionList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

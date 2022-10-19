@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var transactionsVM: TransactionListViewModel
+    
     var body: some View {
         NavigationView {
             ScrollView {
