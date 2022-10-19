@@ -11,6 +11,8 @@
 		AC9B1FC929000DF500A1A4A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B1FC829000DF500A1A4A2 /* ContentView.swift */; };
 		AC9B1FCB29000DF600A1A4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9B1FCA29000DF600A1A4A2 /* Assets.xcassets */; };
 		AC9B1FCE29000DF600A1A4A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9B1FCD29000DF600A1A4A2 /* Preview Assets.xcassets */; };
+		ACF93BDE290015E1006879F6 /* Exte+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF93BDD290015E1006879F6 /* Exte+Color.swift */; };
+		ACF93BE1290019A3006879F6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF93BE0290019A3006879F6 /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AC9B1FC829000DF500A1A4A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC9B1FCA29000DF600A1A4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9B1FCD29000DF600A1A4A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACF93BDD290015E1006879F6 /* Exte+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exte+Color.swift"; sourceTree = "<group>"; };
+		ACF93BE0290019A3006879F6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				AC9B1FC629000DF500A1A4A2 /* Tracker_SwiftUI_LBTAApp.swift */,
 				AC9B1FC829000DF500A1A4A2 /* ContentView.swift */,
 				AC9B1FCA29000DF600A1A4A2 /* Assets.xcassets */,
+				ACF93BDF29001993006879F6 /* Model */,
+				ACF93BDC290014D7006879F6 /* Extensions */,
 				AC9B1FCC29000DF600A1A4A2 /* Preview Content */,
 			);
 			path = Tracker_SwiftUI_LBTA;
@@ -65,6 +71,22 @@
 				AC9B1FCD29000DF600A1A4A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACF93BDC290014D7006879F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACF93BDD290015E1006879F6 /* Exte+Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACF93BDF29001993006879F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACF93BE0290019A3006879F6 /* Transaction.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			files = (
 				AC9B1FC929000DF500A1A4A2 /* ContentView.swift in Sources */,
 				AC9B1FC729000DF500A1A4A2 /* Tracker_SwiftUI_LBTAApp.swift in Sources */,
+				ACF93BE1290019A3006879F6 /* Transaction.swift in Sources */,
+				ACF93BDE290015E1006879F6 /* Exte+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
