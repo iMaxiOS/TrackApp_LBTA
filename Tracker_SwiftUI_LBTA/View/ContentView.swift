@@ -11,8 +11,6 @@ import SwiftUICharts
 struct ContentView: View {
     @EnvironmentObject var transactionsVM: TransactionListViewModel
     
-    private var demoData: [Double] = [8, 2, 4, 6, 12, 9, 2]
-    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -21,14 +19,20 @@ struct ContentView: View {
                         .font(.title2)
                         .bold()
                     
+                    let data = transactionsVM.accomulateTransactions()
+                    let totalExpenses = data.last?.1 ?? 0
                     CardView {
-                        VStack {
-                            ChartLabel("$900", type: .title)
+                        VStack(alignment: .leading) {
+                            ChartLabel(
+                                totalExpenses.formatted(.currency(code: "USD")),
+                                type: .title,
+                                format: "$%.02f"
+                            )
                             LineChart()
                         }
                         .background(Color.systemBackground)
                     }
-                    .data(demoData)
+                    .data(data)
                     .chartStyle(
                         ChartStyle(
                             backgroundColor: Color.systemBackground,

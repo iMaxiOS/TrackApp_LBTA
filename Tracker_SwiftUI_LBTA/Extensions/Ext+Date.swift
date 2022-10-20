@@ -10,7 +10,13 @@ import Foundation
 extension DateFormatter {
     static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd//yyyy"
+        dateFormatter.dateFormat = "MM/dd/yyyy"
         return dateFormatter
     }()
+}
+
+extension Date: Strideable {
+    func formatted() -> String {
+        return self.formatted(.dateTime.year().month().day())
+    }
 }
