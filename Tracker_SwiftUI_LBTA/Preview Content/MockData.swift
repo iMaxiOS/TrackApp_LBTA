@@ -25,9 +25,3 @@ var transactionMockData = Transaction(
 )
 
 var transactionListMockData = [Transaction](repeating: transactionMockData, count: 10)
-
-let transactionListVM: TransactionListViewModel = {
-    let transactions = TransactionListViewModel()
-    transactions.transactions = transactionListMockData
-    return transactions
-}()

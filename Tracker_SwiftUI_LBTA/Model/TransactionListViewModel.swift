@@ -7,11 +7,18 @@
 
 import Foundation
 import Combine
+import Collections
+
+typealias TransactionGroup = OrderedDictionary<String, [Transaction]>
 
 final class TransactionListViewModel: ObservableObject {
     @Published var transactions: [Transaction] = []
     
     private var subscriber = Set<AnyCancellable>()
+    
+    init() {
+        getTransaction()
+    }
     
     func getTransaction() {
         guard let url = URL(string: "https://designcode.io/data/transactions.json") else { return }
@@ -38,5 +45,11 @@ final class TransactionListViewModel: ObservableObject {
                 self?.transactions = transactions
             }
             .store(in: &subscriber)
+    }
+    
+    func groupTransactionByMonth() -> TransactionGroup {
+        guard !transactions.isEmpty else { return [:] }
+        
+        return TransactionGroup(grouping: transactions, by: { $0.month })
     }
 }

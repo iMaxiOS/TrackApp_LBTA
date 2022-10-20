@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RecentTransactionList: View {
+    @EnvironmentObject var transactionListVM: TransactionListViewModel
     
     var body: some View {
         VStack {
@@ -18,7 +19,7 @@ struct RecentTransactionList: View {
                 Spacer()
                 
                 NavigationLink {
-                    
+                    TransactionList()
                 } label: {
                     HStack(spacing: 6) {
                         Text("Show All")
@@ -45,6 +46,12 @@ struct RecentTransactionList: View {
 }
 
 struct RecentTransactionList_Previews: PreviewProvider {
+    static let transactionListVM: TransactionListViewModel = {
+        let transactions = TransactionListViewModel()
+        transactions.transactions = transactionListMockData
+        return transactions
+    }()
+    
     static var previews: some View {
         Group {
             RecentTransactionList()
